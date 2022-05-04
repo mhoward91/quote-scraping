@@ -1,17 +1,21 @@
-# quote-scraping
+# Quote-Scraping
 
-Simple overview of use/purpose.
+Command line app, where a user receives four guesses to identify the author of a quote, aided by a series of hints.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The program uses the Beautiful Soup package to scrape quote data from this [website](http://quotes.toscrape.com/). It parses the HTML, identifying data by its class ID or anchor tab to load a list of structured tuples into memory. A quote is selected at random and displayed to the user, at which point they are prompted to input the author of the quote into the terminal.
+
+- After the first incorrect guess, the author birth date and location are displayed to the user as a hint
+- After the second incorrect guess, the first letter of the author's first name is displayed to the user as a hint
+- After the third incorrect guess, the first letter of the author's surname name is displayed to the user as a hint
+- After the fourth incorrect guess, the correct answer will display and the program will terminate
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+To clone and run this app, you'll need [Git](https://git-scm.com) and a [Python 3 installation](http://python.org/).
 
 ### Installing
 
