@@ -27,7 +27,7 @@ To clone and run this app on your machine, you'll need [Git](https://git-scm.com
 $ git clone https://github.com/mhoward91/quote-scraping.git
 ```
 
-2. Change directory to the repository
+2. Change directory to this repository
 ```
 $ cd quote-scraping
 ```
@@ -39,7 +39,7 @@ $ python -m venv .venv
 $ .venv\scripts\activate
 ```
 
-4. Install required packages
+4. Install the required packages
 ```
 $ pip install -r requirements.txt
 ```
