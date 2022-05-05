@@ -1,66 +1,51 @@
 # Quote-Scraping
 
-Command line app, where a user receives four guesses to identify the author of a quote, aided by a series of hints.
+Command line program, where a user receives four guesses to identify the author of a quote, aided by a series of hints.
 
 ## Description
 
-The program uses the Beautiful Soup package to scrape quote data from this [website](http://quotes.toscrape.com/). It parses the HTML, identifying data by its class ID or anchor tab to load a list of structured tuples into memory. A quote is selected at random and displayed to the user, at which point they are prompted to input the author of the quote into the terminal.
+The program uses the Beautiful Soup package to scrape data from this [website](http://quotes.toscrape.com/). It parses the HTML, identifying quote data by its class ID or anchor tab to load a list of structured tuples into memory. A quote is selected at random and displayed to the user, at which point they are prompted to input the author of the quote into the terminal.
 
-- After the first incorrect guess, the author birth date and location are displayed to the user as a hint
-- After the second incorrect guess, the first letter of the author's first name is displayed to the user as a hint
-- After the third incorrect guess, the first letter of the author's surname name is displayed to the user as a hint
-- After the fourth incorrect guess, the correct answer will display and the program will terminate
+- After one incorrect guess, the author birth date and location are displayed to the user
+- After two incorrect guesses, the first letter of the author's first name is displayed to the user
+- After three incorrect guesses, the first letter of the author's surname name is displayed to the user
+- After four incorrect guesses, the correct answer is displayed and the program terminates
 
 ## Getting Started
 
 ### Dependencies
 
-To clone and run this app, you'll need [Git](https://git-scm.com) and a [Python 3 installation](http://python.org/).
+To clone and run this app on your machine, you'll need [Git](https://git-scm.com) and [Python 3](http://python.org/).
 
-### Installing
+### Installing & Running 
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
+1. Fork and clone this repository
 ```
-code blocks for commands
+$ git clone https://github.com/mhoward91/quote-scraping.git
 ```
 
-## Help
-
-Any advise for common problems or issues.
+2. Change directory to the repository
 ```
-command to run if program contains helper info
+$ cd quote-scraping
 ```
 
-## Authors
+3. Create and activate a virtual environment
+```
+$ python -m venv .venv
 
-Contributors names and contact info
+$ .venv\scripts\activate
+```
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+4. Install required packages
+```
+$ pip install -r requirements.txt
+```
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+5. Run the program
+```
+python quote_scrape.py
+```
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+This project is licensed under the MIT License - see the LICENSE.md file for details
