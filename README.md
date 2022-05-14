@@ -4,7 +4,7 @@ Command line program, where a user receives four guesses to identify the author 
 
 ## Description
 
-The program uses the Beautiful Soup package to scrape data from this [website](http://quotes.toscrape.com/). It parses the HTML, identifying quote data by its class ID or anchor tab to load a list of structured tuples into memory. A quote is selected at random and displayed to the user, at which point they are prompted to input the author of the quote into the terminal.
+The program uses the [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/#) package to scrape data from [Quotes to Scrape](http://quotes.toscrape.com/). It parses the HTML, identifying quote data by its class ID or anchor tab to load a list of structured tuples into memory. A quote is selected at random and displayed to the user, at which point they are prompted to input the author of the quote into the terminal.
 
 | After the... | the outcome is... |
 | --- | --- |
