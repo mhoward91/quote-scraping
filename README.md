@@ -8,7 +8,7 @@ The program uses the [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en
 
 | After the... | the outcome is... |
 | --- | --- |
-| First incorrect guess | the author birth date and location are displayed to the user |
+| First incorrect guess | the author's birth date and location are displayed to the user |
 | Second incorrect guess | the first letter of the author's first name is displayed to the user |
 | Third incorrect guess | the first letter of the author's surname name is displayed to the user |
 | Fourth incorrect guess | the correct answer is displayed and the program terminates |
@@ -27,24 +27,19 @@ To clone and run this app on your machine, you'll need [Git](https://git-scm.com
 $ git clone https://github.com/mhoward91/quote-scraping.git
 ```
 
-2. Change directory to this repository
-```
-$ cd quote-scraping
-```
-
-3. Create and activate a virtual environment
+2. Create and activate a virtual environment
 ```
 $ python -m venv .venv
 
 $ .venv\scripts\activate
 ```
 
-4. Install the required packages
+3. Install the required packages
 ```
 $ pip install -r requirements.txt
 ```
 
-5. Run the program
+4. Run the program
 ```
 python quote_scrape.py
 ```
